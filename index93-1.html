@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading-methods of jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    /**Создать файл variant93-1.html, добавить сверху кнопку, а затем пять абзацев с каким-либо текстом и между 
+каждым абзацем по маленькому рисунку. При нажатии на кнопку среди всех найденных абзацев для 3-го и 5-го изменить 
+положение – сместить его на 100px влево относительно текущего положения.  При нажатии на любую из картинок должно 
+происходить движение текущей вниз на 30px*/
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#div5[align|='right'").animate({ left: '-100px' });
+        $("#div9[align|='right'").animate({ left: '-100px' });
+      });
+      $("#div2").click(function () {
+        $('#div2').delay(100).animate({ marginTop: +30 }, 0);
+      });
+      $("#div4").click(function () {
+        $('#div4').delay(100).animate({ marginTop: +30 }, 0);
+      });
+      $("#div6").click(function () {
+        $('#div6').delay(100).animate({ marginTop: +30 }, 0);
+      });
+      $("#div8").click(function () {
+        $('#div8').delay(100).animate({ marginTop: +30 }, 0);
+      });
+      $("#div10").click(function () {
+        $('#div10').delay(100).animate({ marginTop: +30 }, 0);
+      });
+    }); 
+  </script>
+</head>
+
+<body>
+
+  <button>Надави</button> <br>
+  <div align="right" id="div1" style="width:180px;height:20px;position:absolute">Рисунок 1</div> <br>
+  <img id="div2" style="height:35px;width:35px;position:absolute" src = "./i.webp"><br><br>
+  <div align="right" id="div3" style="width:180px;height:20px;position:absolute">Рисунок 2</div><br>
+  <div id="div4" style="background:rgb(53, 172, 53);height:35px;width: 35px;position:absolute;"></div> <br><br>
+  <div align="right" id="div5" style="width:180px;height:20px;position:absolute;">Рисунок 3</div><br>
+  <div id="div6" style="background:rgb(173, 96, 96);height:35px;width: 35px;width: 35px;position:absolute;"></div> <br><br>
+  <div align="right" id="div7" style="width:180px;height:20px;position:absolute">Рисунок 4</div><br>
+  <div id="div8" style="background:rgb(126, 78, 126);height:35px;width: 35px;width: 35px;position:absolute;"></div> <br><br>
+  <div align="right" id="div9" style="width:180px;height:20px;position:absolute;">Рисунок 5</div><br>
+  <div id="div10" style="background:rgb(52, 24, 85);height:35px;width: 35px;width: 35px;position:absolute;"></div>
+</body>
+
+</html>
